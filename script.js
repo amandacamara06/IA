@@ -6,36 +6,39 @@ const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Insira o enunciado da pergunta 1",
         alernativas: ["Alternativa 1", "Alternativa 2"],
     },
 
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Insira o enunciado da pergunta 2",
         alternativas: ["Alternativa 1", "Alternativa 2"],
     },
-]
+
+    {
+        enunciado: "Insira o enunciado da pergunta 3",
+        alternativas: ["Alternativa 1", "Alternativa 2"],
+    },   
+];
 const lapis = {
     tamanho: 20,
     tipo: 'HB',
     cor: 'Grafite',
     temBorrachaAtras: false
 }
-const perguntas = [
-    {
-        enunciado: "pergunta 1",
-        alternativas: [
-            'Alternativa 1',
-            'Alternativa 2'
-        ]
-    }
-]
-const perguntas = [//abre lista de perguntas
+  [//abre lista de perguntas
 {//abre objeto de pergunta
     enunciado: "pergunta 1",
     alternativas: [
         'Alternativa 1',
         'Alternativa 2'
     ]
+}//fecha objeto de pergunta
+]//fecha lista de perguntas
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
 }
-]
